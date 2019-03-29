@@ -51,7 +51,7 @@ Resources:
       RestApiId: !Ref Api
       Stage: !Ref EnvironmentAPIGatewayStageName
     Condition: ApiCustomDomain
-    DependsOn: Api
+    DependsOn: ApiStage
 Parameters:
   StackTagName:
     Type: String
