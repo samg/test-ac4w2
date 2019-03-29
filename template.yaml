@@ -49,7 +49,7 @@ Resources:
       BasePath: basepathtwo
       DomainName: api.pdx-serverless.dev
       RestApiId: !Ref Api
-      Stage: foobar
+      Stage: CloudNativeLive
     Condition: ApiCustomDomain
 Parameters:
   StackTagName:
