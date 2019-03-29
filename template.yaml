@@ -49,7 +49,7 @@ Resources:
       BasePath: basepathtwo
       DomainName: api.pdx-serverless.dev
       RestApiId: !Ref Api
-      Stage: !Ref EnvironmentAPIGatewayStageName
+      Stage: foobar
     Condition: ApiCustomDomain
 Parameters:
   StackTagName:
