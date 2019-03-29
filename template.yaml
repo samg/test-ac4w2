@@ -50,7 +50,8 @@ Resources:
       DomainName: api.pdx-serverless.dev
       RestApiId: !Ref Api
       Stage: CloudNativeLive
-    Condition: ApiCustomDomain
+    Condition: !Ref EnvironmentAPIGatewayStageName
+    DependsOn: Api
 Parameters:
   StackTagName:
     Type: String
